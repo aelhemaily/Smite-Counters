@@ -1,0 +1,2 @@
+# Smite Counters
+ SmiteCounters is an attempt to help new-comers to Smite and even experienced players understand counter-matchups, items and strategies for enemy gods that you might be struggling against. It is the product of being a fan of and playing the game for almost a decade now. In the home section, you may search each god to find their page with info about counter picks, items and playstyles that help against them.
