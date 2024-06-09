@@ -99,7 +99,7 @@ const gods = [
     { name: "khepri", priority: "very low", image: "../../images/khepri.png" },
     { name: "king arthur", priority: "very low", image: "../../images/kingarthur.png" },
     { name: "kukulkan", priority: "very low", image: "../../images/kukulkan.png" },
-    { name: "kumbhakarna", priority: "very low", image: "../../images/Kumbhakarna.png" },
+    { name: "kumbhakarna", priority: "very low", image: "../../images/kumbhakarna.png" },
     { name: "kuzenbo", priority: "very low", image: "../../images/kuzenbo.png" },
     { name: "lancelot", priority: "very low", image: "../../images/lancelot.png" },
     { name: "loki", priority: "very low", image: "../../images/loki.png" },
