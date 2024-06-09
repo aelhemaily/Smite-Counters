@@ -133,6 +133,7 @@ const gods = [
     { name: "zeus", priority: "very low", image: "../../images/zeus.png" }
 ];
 
+
 // Create an object to map priorities to row indices
 const priorityMap = {
     "very high": 0,
@@ -152,15 +153,15 @@ const columnCount = 10;
 const godsPerColumn = Math.ceil(gods.length / columnCount);
 
 // Loop through each column
-for (let colIndex = 1; colIndex < columnCount; colIndex++) {
+for (let colIndex = 1; colIndex <= columnCount; colIndex++) {
     const columnStartIndex = (colIndex - 1) * godsPerColumn;
-    const columnEndIndex = Math.min((colIndex - 1) * godsPerColumn + godsPerColumn, gods.length);
+    const columnEndIndex = Math.min(colIndex * godsPerColumn, gods.length);
     const columnGods = gods.slice(columnStartIndex, columnEndIndex);
 
     // Loop through each god in the current column
     for (let godIndex = 0; godIndex < columnGods.length; godIndex++) {
         const god = columnGods[godIndex];
-        const row = document.getElementById(antihealTable.rows[priorityMap[god.priority]].id)
+        const row = document.getElementById(antihealTable.rows[priorityMap[god.priority]].id);
         const cell = document.createElement("td");
         const div = document.createElement("div");
         const img = document.createElement("img");
@@ -171,30 +172,26 @@ for (let colIndex = 1; colIndex < columnCount; colIndex++) {
         img.alt = god.name;
         img.classList.add("god-icon");
         img.addEventListener("click", function() {
-            window.location.href = `../../gods/${god.name.replace(/ /g, "_").toLowerCase()}/${god.name.replace(/ /g, "_").toLowerCase()}.html`;
+            window.location.href = `../../gods/godtemplate/godtemplate.html?${god.name.replace(/ /g, "_").toLowerCase()}`;
         });
         name.textContent = god.name.replace(/\b\w/g, l => l.toUpperCase());
-        name.href = `../../gods/${god.name.replace(/ /g, "_").toLowerCase()}/${god.name.replace(/ /g, "_").toLowerCase()}.html`;
+        name.href = `../../gods/godtemplate/godtemplate.html?${god.name.replace(/ /g, "_").toLowerCase()}`;
         name.classList.add("god-name");
         name.addEventListener("click", function() {
-            window.location.href = `../../gods/${god.name.replace(/ /g, "_").toLowerCase()}/${god.name.replace(/ /g, "_").toLowerCase()}.html`;
+            window.location.href = `../../gods/godtemplate/godtemplate.html?${god.name.replace(/ /g, "_").toLowerCase()}`;
         });
 
         div.appendChild(img);
         div.appendChild(name);
         cell.appendChild(div);
         row.appendChild(cell);
-
-        
     }
-    
 }
 
 document.getElementById('hamburger-icon').addEventListener('click', function() {
     const sidebar = document.getElementById('sidebar');
     sidebar.classList.toggle('visible');
 });
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const returnToTopButton = document.getElementById('return-to-top');
@@ -220,8 +217,5 @@ document.addEventListener('DOMContentLoaded', function() {
     // Scroll to the top when the button is clicked
     returnToTopButton.addEventListener('click', scrollToTop);
 });
-
-
-
 
 
