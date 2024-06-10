@@ -117,13 +117,14 @@ main {
     border: 4px solid #ffffff53;
     border-radius: 10px;
     margin: auto;
-    height: 48vh;
+    height: 100%;
     transition: opacity 0.5s ease, transform 0.7s ease;
     background: rgba(38, 46, 66, 0.945);
+    
 }
 
 .god:hover {
-    background: rgba(255, 255, 255, 0.5) url('images/hoverbarbg.png');
+    background: rgb(53, 51, 51);
     background-repeat: no-repeat;
     border: solid 4px #ff6347;
 }
@@ -795,8 +796,10 @@ nav {
     padding: 20px;
     text-align: center;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -828,4 +831,27 @@ body, html {
 }
 
 
+#support-me { 
+    margin-left: 20px;
+    margin-top:17px;
+    font-size: 22px;
+}
+#mug{
+    color:rgb(4, 128, 4);
+}
 
+#support-me a {
+    color: #febe26;
+}
+#support-me a:hover {
+    color: rgb(4, 128, 4);
+}
+
+@media (max-width: 500px)
+{
+#support-me {
+    font-size: 16px;
+    margin-top: 21px;
+    
+}
+}

@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             newTab: false
         },
         {
-            name: "Gods with a shield",
+            name: "Gods with a <br>shield",
             image: "images/shield.png",
             counters: ["Shiva", "Erosion"],
             externalLink: "../../categs/no-toggle/no-toggle.html?category=shield",
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             newTab: false
         },
         {
-            name: "Gods with DoT",
+            name: "Gods with <br>DoT",
             image: "images/dot.png",
             counters: ["Aegis Amulet", "Gods with healing"],
             externalLink: "../../categs/yes-toggle/yes-toggle.html?category=dot",
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             newTab: false
         },
         {
-            name: "Gods with healing",
+            name: "Gods with <br>healing",
             image: "images/healinggods.png",
             counters: ["Gods with built-in antiheal", "Gods with a burst damage ultimate"],
             externalLink: "../../categs/yes-toggle/yes-toggle.html?category=healing",
@@ -78,21 +78,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
             newTab: false
         },
         {
-            name: "Gods with leaps",
+            name: "Gods with <br>leaps",
             image: "images/leap.png",
             counters: ["Awilix", "Gods with cripples"],
             externalLink: "../../categs/yes-toggle/yes-toggle.html?category=leaps",
             newTab: false
         },
         {
-            name: "Gods with stealth",
+            name: "Gods with <br>stealth",
             image: "images/stealth.png",
             counters: ["Heimdallr", "Gods with DoT", "Mystical Mail"],
             externalLink: "../../categs/no-toggle/no-toggle.html?category=stealth",
             newTab: false
         },
         {
-            name: "Gods with walls",
+            name: "Gods with <br>walls",
             image: "images/wall.png",
             counters: ["Gods with leaps", "Phantom Shell"],
             externalLink: "../../categs/yes-toggle/yes-toggle.html?category=walls",
@@ -231,10 +231,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             // Adding playstyle name
             const playStyleName = document.createElement('a');
-            playStyleName.textContent = playStyle.name;
+            playStyleName.innerHTML = playStyle.name;
             playStyleName.href = playStyle.externalLink;
             if (playStyle.newTab) {
-                playStyleName.target = '_blank';
+            playStyleName.target = '_blank';
             }
             playStyleElement.appendChild(playStyleName);
 

@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
 
         question.addEventListener('click', () => {
             // Toggle the active class on the current item
@@ -15,6 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
             if (!isActive) {
                 item.classList.add('active');
             }
+        });
+
+        // Close the FAQ item when clicking the answer
+        answer.addEventListener('click', () => {
+            item.classList.remove('active');
         });
     });
 });
@@ -51,4 +57,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Scroll to the top when the button is clicked
     returnToTopButton.addEventListener('click', scrollToTop);
 });
-

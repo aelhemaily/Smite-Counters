@@ -705,16 +705,17 @@ nav {
 }
 .site-footer {
     position: relative;
-   
-    height: 5vh; /* Adjust this value as needed */
-    clear: both; /* Ensure the footer clears any floated elements */
-    background: linear-gradient(to bottom, #222 0%, #111 100%);  /* Gradient background */
+    height: 5vh; 
+    clear: both; 
+    background: linear-gradient(to bottom, #222 0%, #111 100%);  
     color: #fff;
     padding: 20px;
     text-align: center;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -743,4 +744,29 @@ body, html {
     #return-to-top {
        right: 15vh;;
     }
+}
+
+#support-me { 
+    margin-left: 20px;
+    margin-top:17px;
+    font-size: 22px;
+}
+#mug{
+    color:rgb(4, 128, 4);
+}
+
+#support-me a {
+    color: #febe26;
+}
+#support-me a:hover {
+    color: rgb(4, 128, 4);
+}
+
+@media (max-width: 500px)
+{
+#support-me {
+    font-size: 16px;
+    margin-top: 21px;
+    
+}
 }

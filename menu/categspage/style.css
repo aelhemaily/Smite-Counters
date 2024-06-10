@@ -44,11 +44,18 @@ main {
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+   
 }
 
 .god img {
     
     border-radius: 10px;
+    height: 100px;
+    width: 100px;
 }
 
 #sitet {
@@ -95,8 +102,8 @@ main {
         1px 1px 0 #000;
     display: block; /* Make the name appear below the image */
     text-align: center; /* Center align the name */
+    justify-content: center;
     margin-top: 5px; /* Add some space between the image and the name */
-    padding: 5px;
     transition: color 0.3s; /* Smooth transition for text color */
 }
 
@@ -673,8 +680,10 @@ nav {
     padding: 20px;
     text-align: center;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
     
 }
 
@@ -704,4 +713,30 @@ body, html {
     #return-to-top {
        right: 15vh;;
     }
+}
+
+
+#support-me { 
+    margin-left: 20px;
+    margin-top:17px;
+    font-size: 22px;
+}
+#mug{
+    color:rgb(4, 128, 4);
+}
+
+#support-me a {
+    color: #febe26;
+}
+#support-me a:hover {
+    color: rgb(4, 128, 4);
+}
+
+@media (max-width: 500px)
+{
+#support-me {
+    font-size: 16px;
+    margin-top: 21px;
+    
+}
 }

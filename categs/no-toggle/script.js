@@ -92,7 +92,7 @@ function createGodElement(god) {
     godElement.classList.add('god');
     
     const godLink = document.createElement('a');
-    godLink.href = `gods/${god.toLowerCase().replace(/ /g, "_")}/${god.toLowerCase().replace(/ /g, "_")}.html`;
+    godLink.href = `../../gods/godtemplate/godtemplate.html?${god.toLowerCase().replace(/ /g, "_")}`;
     
     const godImage = document.createElement('img');
     godImage.src = `../../images/${god.replace(/ /g, "")}.png`;

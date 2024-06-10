@@ -172,13 +172,13 @@ for (let colIndex = 1; colIndex <= columnCount; colIndex++) {
         img.alt = god.name;
         img.classList.add("god-icon");
         img.addEventListener("click", function() {
-            window.location.href = `../../gods/godtemplate/godtemplate.html?${god.name.replace(/ /g, "_").toLowerCase()}`;
+            window.location.href = `../../gods/godtemplate/godtemplate.html?${god.name.replace(/ /g, "_").replace(/'/g, "").toLowerCase()}`;
         });
         name.textContent = god.name.replace(/\b\w/g, l => l.toUpperCase());
-        name.href = `../../gods/godtemplate/godtemplate.html?${god.name.replace(/ /g, "_").toLowerCase()}`;
+        name.href = `../../gods/godtemplate/godtemplate.html?${god.name.replace(/ /g, "_").replace(/'/g, "").toLowerCase()}`;
         name.classList.add("god-name");
         name.addEventListener("click", function() {
-            window.location.href = `../../gods/godtemplate/godtemplate.html?${god.name.replace(/ /g, "_").toLowerCase()}`;
+            window.location.href = `../../gods/godtemplate/godtemplate.html?${god.name.replace(/ /g, "_").replace(/'/g, "").toLowerCase()}`;
         });
 
         div.appendChild(img);
@@ -217,5 +217,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Scroll to the top when the button is clicked
     returnToTopButton.addEventListener('click', scrollToTop);
 });
-
-

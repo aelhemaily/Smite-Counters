@@ -108,7 +108,7 @@ const gods = [
     { name: "Sobek", displayName: "Sobek", category: "guardian", image: "images/sobek.png", path: "gods/godtemplate/godtemplate.html?sobek" },
     { name: "Sol", displayName: "Sol", category: "mage", image: "images/sol.png", path: "gods/godtemplate/godtemplate.html?sol" },
     { name: "Sun Wukong", displayName: "Sun Wukong", category: "warrior", image: "images/sunwukong.png", path: "gods/godtemplate/godtemplate.html?sun_wukong" },
-    { name: "Surtr", displayName: "surtr", category: "warrior", image: "images/surtr.png", path: "gods/godtemplate/godtemplate.html?surtr" },
+    { name: "Surtr", displayName: "Surtr", category: "warrior", image: "images/surtr.png", path: "gods/godtemplate/godtemplate.html?surtr" },
     { name: "Susano", displayName: "Susano", category: "assassin", image: "images/susano.png", path: "gods/godtemplate/godtemplate.html?susano" },
     { name: "Sylvanus", displayName: "Sylvanus", category: "guardian", image: "images/sylvanus.png", path: "gods/godtemplate/godtemplate.html?sylvanus" },
     { name: "Terra", displayName: "Terra", category: "guardian", image: "images/terra.png", path: "gods/godtemplate/godtemplate.html?terra" },
